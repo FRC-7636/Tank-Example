@@ -1,5 +1,5 @@
 # Tank-Example
-這是 2025 Rotational Training 第六/七次培訓課程的示範程式。
+這是 2025 Rotational Training 第六/七次培訓課程的 Tank 底盤示範程式。
 
 ## 關於 Robot[_Complete].java
 在 `src/main/java/frc/robot/` 內有 `Robot.java` 及 `Robot_Complete.java` 等檔案。\
