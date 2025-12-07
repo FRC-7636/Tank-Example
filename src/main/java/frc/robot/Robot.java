@@ -24,6 +24,9 @@ public class Robot extends TimedRobot {
     motorLB.configFactoryDefault();
     motorRF.configFactoryDefault();
     motorRB.configFactoryDefault();
+    // Invert the right motors
+    motorRF.setInverted(true);
+    motorRB.setInverted(true);
     // Set the back motors to follow the front ones
     motorLB.follow(motorLF);
     motorRB.follow(motorRF);
@@ -46,7 +49,7 @@ public class Robot extends TimedRobot {
 
   @Override
   public void teleopPeriodic() {
-    drive.arcadeDrive(controller.getLeftY(), controller.getRightX());
+    drive.arcadeDrive(-controller.getLeftY(), -controller.getRightX());
   }
 
   @Override
